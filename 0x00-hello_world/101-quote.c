@@ -3,10 +3,11 @@
 /**
  * main - Printing ouput to the standard error
  *
- * return 1 (Success)
+ * Return: 1 (Success)
+ * Using fprintf
  */
 
-int main(void) 
+int main(void)
 {
 	fprintf(stderr,
 	"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
