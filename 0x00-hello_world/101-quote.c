@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Printing ouput followed by a new line to the standard error without printf and puts
+ * main - Printing ouput followed by a new line 
+ * to the standard error without printf and puts
  * return 0 (Success)
  */
 
