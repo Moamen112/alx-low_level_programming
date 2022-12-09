@@ -10,9 +10,10 @@ int main(void)
 {
 	char c = 'a';
 
-	for (int i = c; i <= 'z'; i++)
+	while (c <= 'z')
 	{
-		printf("%c", i);
+		printf("%c", c);
+		c++;
 	}
 
 	printf("\n");
