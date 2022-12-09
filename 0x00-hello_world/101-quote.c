@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Printing ouput followed by a new line 
- * to the standard error without printf and puts
- * return 0 (Success)
+ * main - Printing ouput to the standard error
+ *
+ * return 1 (Success)
  */
 
 int main(void) 
