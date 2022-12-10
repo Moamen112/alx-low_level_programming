@@ -20,6 +20,7 @@ int main(void)
 	while (x <= 'f')
 	{
 		putchar(x);
+		x++;
 	}
 
 	putchar('\n');
