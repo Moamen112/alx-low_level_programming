@@ -11,7 +11,7 @@ void jack_bauer(void)
 	int m = 0;
 	int h = 0;
 
-	while (h <= 12)
+	while (h <= 23)
 	{
 		while (m <= 59)
 		{
@@ -21,7 +21,7 @@ void jack_bauer(void)
 			_putchar((m / 10) + '0');
 			_putchar((m % 10) + '0');
 
-			if (h == 12 && m == 59)
+			if (h == 23 && m == 59)
 				break;
 	
 			
