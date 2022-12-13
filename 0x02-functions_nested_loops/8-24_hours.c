@@ -23,8 +23,8 @@ void jack_bauer(void)
 
 			if (h == 23 && m == 59)
 				break;
-	
-			
+
+
 			_putchar('\n');
 			m++;
 		}
