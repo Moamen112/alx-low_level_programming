@@ -2,7 +2,7 @@
 
 /**
  * _islower - Checks if the alphabet is lower
- *
+ * @c: The alphabet to test
  * Return: 1 if lower and 0 if upper
  */
 
