@@ -28,7 +28,7 @@ int main(void)
 	{
 		carry = (m + n) / 1000;
 		p = (m + n) - carry * 1000;
-		k = (num1 + num2) + carry;
+		next = (num1 + num2) + carry;
 		m = n;
 		n = p;
 		num1 = num2;
