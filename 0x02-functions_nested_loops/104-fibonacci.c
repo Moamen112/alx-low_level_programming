@@ -35,11 +35,11 @@ int main(void)
 		num2 = next;
 		if (p >= 100)
 		{
-			printf("%lu%lu", k, p);
+			printf("%lu%lu", next, p);
 		}
 		else
 		{
-			printf("%lu0%lu", k, p);
+			printf("%lu0%lu", next, p);
 		}
 		if (i != 98)
 			printf(", ");
