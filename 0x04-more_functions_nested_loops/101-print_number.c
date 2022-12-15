@@ -7,7 +7,7 @@
 
 void print_number(int n)
 {
-	int temp, pow, exp;
+	int temp, i,pow, exp;
 
 	exp = pow = 1;
 
@@ -25,7 +25,7 @@ void print_number(int n)
 		temp /= 10;
 	}
 
-	while (--pow)
+	for (i = 1; i < pow; i++)
 		exp *= 10;
 
 	while (exp > 1)
