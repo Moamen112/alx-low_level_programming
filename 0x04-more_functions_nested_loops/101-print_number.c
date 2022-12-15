@@ -25,7 +25,7 @@ void print_number(int n)
 		pow++;
 	}
 
-	for (i = 1; i < pow; i++)
+	while (--pow)
 		exp *= 10;
 
 	while (exp > 1)
