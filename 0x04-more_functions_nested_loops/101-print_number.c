@@ -7,17 +7,18 @@
 
 void print_number(int n)
 {
-	unsigned int temp, pow, exp;
+	unsigned int temp, num, pow, exp;
 
 	exp = pow = 1;
+	num = n;
 
 	if (n < 0)
 	{
-		n *= -1;
 		_putchar('-');
+		num = - num;
 	}
 
-	temp = n;
+	temp = num;
 
 	while (temp >= 10)
 	{
@@ -30,8 +31,8 @@ void print_number(int n)
 
 	while (exp > 1)
 	{
-		_putchar((n / exp) % 10 + '0');
+		_putchar((num / exp) % 10 + '0');
 		exp /= 10;
 	}
-		_putchar(n % 10 + '0');
+		_putchar(num % 10 + '0');
 }
