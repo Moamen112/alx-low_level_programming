@@ -7,7 +7,7 @@
 
 void print_number(int n)
 {
-	int temp, i,pow, exp;
+	int temp, pow, exp;
 
 	exp = pow = 1;
 
