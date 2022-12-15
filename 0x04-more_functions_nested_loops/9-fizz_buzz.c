@@ -5,6 +5,7 @@
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
 	int i;
@@ -20,4 +21,6 @@ int main(void)
 		else
 			printf(" %d", i);
 	}
+	printf('\n');
+	return (0);
 }
