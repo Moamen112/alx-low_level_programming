@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,7 +7,7 @@
 
 void print_number(int n)
 {
-	int temp, pow, result;
+	unsigned int temp, pow, result;
 
 	pow = 1;
 
