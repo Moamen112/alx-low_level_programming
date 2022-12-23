@@ -8,7 +8,7 @@
 
 void print_number(int n)
 {
-	unsigned int temp, pow, result;
+	int temp, pow, result;
 
 	pow = 1;
 
@@ -17,7 +17,7 @@ void print_number(int n)
 	else
 	{
 		result = n;
-		_putchar('_');
+		_putchar('-');
 	}
 
 	temp = result;
