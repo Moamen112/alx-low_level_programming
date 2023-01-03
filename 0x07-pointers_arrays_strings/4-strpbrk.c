@@ -8,7 +8,7 @@
  * in accept or NULL if no such a byte is found
  */
 
-char *_strpbrk(char *s, char *accpet)
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i;
 
