@@ -6,14 +6,17 @@
  * Return: Nothing
  */
 
+unsigned int i = 0;
+
 void _puts_recursion(char *s)
 {
-	if (*s == '\0')
+
+	if (s[i] == '\0')
 	{
 		_putchar('\n');
 		return;
 	}
 
-	_putchar(*s);
-	_puts_recursion(s++);
+	_putchar(s[i]);
+	_puts_recursion(i++);
 }
