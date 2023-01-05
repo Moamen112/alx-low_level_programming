@@ -14,7 +14,7 @@ int is_prime(int n, int base)
 	else if (n == base - 1)
 		return (1);
 	else if (base > n)
-		return (is_prime(n + 1), base);
+		return (is_prime(n + 1, base));
 	return (1);
 }
 
