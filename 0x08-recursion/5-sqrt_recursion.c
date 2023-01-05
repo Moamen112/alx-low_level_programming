@@ -24,5 +24,5 @@ int _sqrt(int n, int base)
 
 int _sqrt_recursion(int n)
 {
-	return (checker(1, n));
+	return (_sqrt(1, n));
 }
