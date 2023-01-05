@@ -13,7 +13,7 @@ int _sqrt(int n, int base)
 		return (n);
 	if (n * n > base)
 		return (-1);
-	return (checker(n + 1, base));
+	return (_sqrt(n + 1, base));
 }
 
 /**
