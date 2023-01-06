@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
 	res = 0;
 
-	if (checker(argc, 1, 0, argv) == 1)
+	if (adds_check(argc, 1, 0, argv) == 1)
 	{
 		printf("Error\n");
 		return (1);
