@@ -4,24 +4,6 @@
 #include <string.h>
 
 /**
- * adds_check - checks for valid input
- * @argc: argument count
- * @i: counter for argv[]
- * @j: counter for argv[][]
- * @argv: argument array
- * Return: 0 on success, 1 on failure
- */
-
-int adds_check(int argc, int i, unsigned int j, char *argv[])
-{
-	for (i = 1; i <= argc; i++)
-		for (j = 0; argv[i] != '\0' && j < strlen(argv[i]); j++)
-			if (isdigit(argv[i][j]) == 0)
-				return (1);
-	return (0);
-}
-
-/**
  * main - adds all arguments together if they are digits.
  * @argc: argument count only accepts ints separated by spaces.
  * @argv: argument array
@@ -30,18 +12,20 @@ int adds_check(int argc, int i, unsigned int j, char *argv[])
 
 int main(int argc, char *argv[])
 {
-	int res, i;
-
-	res = 0;
-
-	if (adds_check(argc, 1, 0, argv) == 1)
-	{
-		printf("Error\n");
-		return (1);
-	}
+	int i, j, sum = 0;	
 
 	for (i = 1; i < argc; i++)
-		res += atoi(argv[i]);
-	printf("%d\n", res);
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		sum += atoi(argv[i]);
+	}
+	printf("%d\n", sum);
 	return (0);
 }
