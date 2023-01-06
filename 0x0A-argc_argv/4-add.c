@@ -42,6 +42,6 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 		res += atoi(argv[i]);
-	printf("%d\n", result);
+	printf("%d\n", res);
 	return (0);
 }
