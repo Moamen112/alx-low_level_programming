@@ -38,5 +38,5 @@ char *str_concat(char *s1, char *s2)
 			arr[i] = s2[i - s1_count];
 		}
 	}
-	return (arr)
+	return (arr);
 }
