@@ -6,13 +6,14 @@
  * @nmemb: number of elements
  * @size: size of each element
  *
- * Return: pointer to allocated memory, or NULL if malloc fails or nmemb or size is 0
+ * Return: pointer to allocated memory,
+ * or NULL if malloc fails or nmemb or size is 0
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *ptr;
-	unsigned i;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
