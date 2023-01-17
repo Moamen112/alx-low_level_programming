@@ -18,6 +18,15 @@
 		data_type data_name;
 	}
 	```
-	- As the data_type is line (int, float, char, etc...)
-	- This is called declaring the structure _No memory is allocated for a struct 
-	  until a variable of the struct type is defind_
+	- As the data_type is like (int, float, char, etc...)
+	- This is called declaring the structure _No memory is allocated for a struct_ 
+	  _until a variable of the struct type is defined_
+- We can use the struct we just declared as followed:
+	```c
+		struct struct_name name;
+	```
+	- struct name is that we used int declaration
+	- name is the variable i'm gonna use to call the struct
+	  it's similar to what we do in the other data types (int x _X here is the name_)
+	- After creating the struct variable the code reserves a memory for the struct	
+	  which include memory for the other variables in it
