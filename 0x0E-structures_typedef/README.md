@@ -13,14 +13,14 @@
 	```c
 	struct struct_name
 	{
-		data_type data_name;
-		data_type data_name;
-		data_type data_name;
+		data_type variable_name;
+		data_type variable_name;
+		data_type variable_name;
 	}
 	```
 	- As the data_type is like (int, float, char, etc...)
-	- This is called declaring the structure _No memory is allocated for a struct_ 
-	  _until a variable of the struct type is defined_
+	- This is called declaring the structure (_No memory is allocated for a struct_ 
+	  _until a variable of the struct type is defined_)
 - We can use the struct we just declared as followed:
 	```c
 		struct struct_name name;
@@ -30,3 +30,19 @@
 	  it's similar to what we do in the other data types (int x _X here is the name_)
 	- After creating the struct variable the code reserves a memory for the struct	
 	  which include memory for the other variables in it
+- What if we need to assign a value to it?
+	- Here is how we can do it
+		```c
+		// The variable name is inside struct
+		// The value is what i need to assign to it
+		name.variable_name = value;
+		```
+
+
+
+
+
+
+
+
+	 
