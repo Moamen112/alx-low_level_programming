@@ -1,1 +1,1 @@
-None Empty readme
+# C - Structures, typedef
