@@ -8,3 +8,13 @@
 	  makes it easy to understand and manipulate. 
 	  Example: a record of an employee's name, age, and salary 
 	  would be a good candidate for a structure
+
+	- An Example of how we can use struct:
+		```c
+		struct struct_name
+		{
+			data_type data_name;
+			data_type data_name;
+			data_type data_name;
+		}
+		```
