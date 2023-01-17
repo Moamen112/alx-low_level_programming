@@ -18,3 +18,6 @@
 		data_type data_name;
 	}
 	```
+	- As the data_type is line (int, float, char, etc...)
+	- This is called declaring the structure _No memory is allocated for a struct 
+	  until a variable of the struct type is defind_
