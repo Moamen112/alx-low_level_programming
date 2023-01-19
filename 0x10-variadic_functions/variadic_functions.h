@@ -7,7 +7,7 @@
 typedef struct valid
 {
 	char *ptr;
-	void (*ptr)(va_list arg);
+	void (*print)(va_list arg);
 } valid_t;
 
 int sum_them_all(const unsigned int n, ...);
