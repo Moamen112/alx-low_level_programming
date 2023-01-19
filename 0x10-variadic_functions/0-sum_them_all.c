@@ -4,7 +4,7 @@
 
 /**
   * sum_them_all - sums all arguments
-  * @n: number of arguments
+  * @n: first param
   * @...: variable list of arguments
   * Return: sum of all arguments
   */
@@ -17,7 +17,8 @@ int sum_them_all(const unsigned int n, ...)
 	if (n == 0)
 		return (0);
 
-	va_start(ap, n);
+	if (n == 0)
+		return (0);
 
 	for (i = res; i < n; i++)
 		res += va_arg(ap, int);
