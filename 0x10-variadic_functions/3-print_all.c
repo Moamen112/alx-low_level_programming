@@ -9,11 +9,9 @@
 
 void print_all(const char * const format, ...)
 {
-	int i, flag = 0;
+	int i = 0, flag = 0;
 	char *s;
 	va_list ap;
-
-	i = 0;
 
 	va_start(ap, format);
 	while (format[i])
@@ -34,24 +32,21 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				s = va_arg(ap, char *);
-				if (s)
-					printf("%s", s);
-				else
-					printf("(nil)");
+				if (!s)
+					s = "(nil)";
+				printf("%s", s);
 				flag = 1;
 				break;
 			default:
 				break;
 		}
-		if(flag && format[i+1])
+		if (flag && format[i + 1])
 		{
 			printf(", ");
 			flag = 0;
 		}
 		i++;
 	}
-
-
 	va_end(ap);
 	printf("\n");
 }
