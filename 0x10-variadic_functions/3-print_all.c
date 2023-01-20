@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	i = 0;
 
 	va_start(ap, format);
-	if (format != NULL)
+	if (format)
 	{
 		while (format[i])
 		{
@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 			{
 				str = va_arg(ap, char *);
 				if (str == NULL)
-				str = "(nil)";
+					str = "(nil)";
 				printf("%s%s", seperator, str);
 			}
 			else if (format[i] == 'f')
