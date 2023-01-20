@@ -19,7 +19,7 @@ void print_all(const char * const format, ...)
 	va_start(ap, format);
 	if (format != NULL)
 	{
-		while(format[i])
+		while (format[i])
 		{
 			if (format[i] == 'c')
 				printf("%s%c", seperator, va_arg(ap, int));
