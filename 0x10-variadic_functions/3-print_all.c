@@ -22,9 +22,13 @@ void print_all(const char * const format, ...)
 		while (format[i])
 		{
 			if (format[i] == 'c')
+			{
 				printf("%s%c", seperator, va_arg(ap, int));
+			}
 			else if (format[i] == 'i')
+			{
 				printf("%s%d", seperator, va_arg(ap, int));
+			}
 			else if (format[i] == 's')
 			{
 				str = va_arg(ap, char *);
@@ -33,7 +37,9 @@ void print_all(const char * const format, ...)
 				printf("%s%s", seperator, str);
 			}
 			else if (format[i] == 'f')
+			{
 				printf("%s%f", seperator, va_arg(ap, double));
+			}
 			else
 			{
 				i++;
