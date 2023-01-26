@@ -23,18 +23,12 @@ int main(void)
         return (1);
     }
     new->str = strdup("Hello");
-	new->len = 5;
-	new->next = head;
-	head = new;
-	n = print_list(head);
-	printf("-> %lu elements\n", n);
-
-	printf("\n");
-	free(new->str);
-	new->str = NULL;
-	n = print_list(head);
-	printf("-> %lu elements\n", n);
-
-	free(new);
-	return (0);
+    new->len = 5;
+    new->next = head;
+    head = new;
+    n = list_len(head);
+    printf("-> %lu elements\n", n);
+    free(new->str);
+    free(new);
+    return (0);
 }
