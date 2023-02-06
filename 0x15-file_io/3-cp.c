@@ -18,14 +18,12 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
 	tf_r = open(argv[1], O_RDONLY);
 	if (tf_r < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-
 	tf_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	while ((i = read(tf_r, buf, BUFSIZ)) > 0)
 	{
@@ -36,7 +34,6 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-
 	if (i < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
@@ -44,7 +41,6 @@ int main(int argc, char *argv[])
 	}
 	j = close(tf_r);
 	n = close(tf_w);
-
 	if (j < 0 || n < 0)
 	{
 		if (j < 0)
