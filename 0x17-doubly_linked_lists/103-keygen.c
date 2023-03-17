@@ -94,6 +94,7 @@ int main(int argc, char **argv)
 	(void) argc;
 
 	for (len = 0; argv[1][len]; len++)
+		;
 
 	keygen[0] = ((char *)alph)[(len ^ 59) & 63];
 
