@@ -9,7 +9,7 @@
  * Return: The index at which the key/value pair should be stored.
  * Description: This function uses the djb2 hashing algorithm.
  */
-unsigned long int get_key_index(const unsigned char *key, unsigned long int size)
+unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
 	return (hash_djb2(key) % size);
 }
