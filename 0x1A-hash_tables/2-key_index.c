@@ -1,4 +1,4 @@
-#include "my_hash_tables.h"
+#include "hash_tables.h"
 
 /**
  * get_key_index - Calculates the index where a key/value
@@ -11,6 +11,6 @@
  */
 unsigned long int get_key_index(const unsigned char *key, unsigned long int size)
 {
-	return (djb2_hash(key) % size);
+	return (hash_djb2(key) % size);
 }
 
